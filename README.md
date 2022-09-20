@@ -9,7 +9,7 @@ based on request.
 
 These api-keys should not be publicly exposed - excessive polling of our endpoints do trigger alarms internally.
 
-The `RNComponent` folder has sample code for a React Native app
+The `RNComponent` folder has sample code for a React Native app  
 The `react-component` folder has sample code for a React app
 Similar patterns for the same can be followed for the implementation.
 
