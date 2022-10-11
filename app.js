@@ -9,9 +9,20 @@ app.get("/",async function (req,res){
       })
       console.log('%c 🍬 instance: ', 'font-size:20px;background-color: #3F7CFF;color:#fff;', instance);
       const payload ={
-        usecase : "YOUR_USE_CASE", // e.g : "calculated"
-        configs: {
-            product_id: "INTERNAL_PRODUCT_ID" // for "calculated"
+        usecase : "calculated", // e.g : "calculated"
+        data: {
+          configs : {
+          "cart": [
+            {
+                "product_id": "603e2e0816b04b63ea74f293",
+                "quantity": 1
+            },
+            {
+                "product_id": "603e2e0916b04b63ea74f297",
+                "quantity": 2
+            }
+          ]
+          }
         }
       }
       const response = await instance.truecost.getTruecost(payload)
